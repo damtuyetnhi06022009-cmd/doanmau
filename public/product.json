@@ -1,0 +1,902 @@
+[
+    {
+        "id": 1,
+        "name": "Bến xe",
+        "idcategory": 1,
+        "imageKey": "sp1",
+        "price": 85000,
+        "sold": 1250,
+        "rating": 4.8
+    },
+    {
+        "id": 2,
+        "name": "Ngõ Ngô Đồng",
+        "idcategory": 1,
+        "imageKey": "sp2",
+        "price": 75000,
+        "sold": 840,
+        "rating": 4.5
+    },
+    {
+        "id": 3,
+        "name": "Cây Cam Ngọt Của Tôi",
+        "idcategory": 1,
+        "imageKey": "sp3",
+        "price": 105000,
+        "sold": 5420,
+        "rating": 4.9
+    },
+    {
+        "id": 4,
+        "name": "Sách Làm Bạn Với Bầu Trời",
+        "idcategory": 1,
+        "imageKey": "sp4",
+        "price": 95000,
+        "sold": 3100,
+        "rating": 4.7
+    },
+    {
+        "id": 5,
+        "name": "Sách Trốn Lên Mái Nhà Để Khóc",
+        "idcategory": 1,
+        "imageKey": "sp5",
+        "price": 88000,
+        "sold": 2150,
+        "rating": 4.6
+    },
+    {
+        "id": 6,
+        "name": "Sách Tôi Thấy Hoa Vàng Trên Cỏ Xanh ",
+        "idcategory": 1,
+        "imageKey": "sp6",
+        "price": 125000,
+        "sold": 4890,
+        "rating": 4.8
+    },
+    {
+        "id": 7,
+        "name": "Sách Hồ Điệp Và Kình Ngư",
+        "idcategory": 1,
+        "imageKey": "sp7",
+        "price": 110000,
+        "sold": 920,
+        "rating": 4.4
+    },
+    {
+        "id": 8,
+        "name": "Sách Tôi Là Bêtô",
+        "idcategory": 1,
+        "imageKey": "sp8",
+        "price": 79000,
+        "sold": 3560,
+        "rating": 4.9
+    },
+    {
+        "id": 9,
+        "name": "Sách Có Hai Con Mèo Ngồi Bên Cửa Sổ",
+        "idcategory": 1,
+        "imageKey": "sp9",
+        "price": 82000,
+        "sold": 2780,
+        "rating": 4.7
+    },
+    {
+        "id": 10,
+        "name": "Sách Như Trời Sao Ôm Lấy Đại Dương",
+        "idcategory": 1,
+        "imageKey": "sp10",
+        "price": 115000,
+        "sold": 650,
+        "rating": 4.3
+    },
+    {
+        "id": 11,
+        "name": "Sách Bí Quyết Hội Hoạ - Phác Hoạ Tĩnh Vật",
+        "idcategory": 2,
+        "imageKey": "sp11",
+        "price": 145000,
+        "sold": 320,
+        "rating": 4.5
+    },
+    {
+        "id": 12,
+        "name": "Sách Vẽ Màu Nước Cho Người Mới Bắt Đầu",
+        "idcategory": 2,
+        "imageKey": "sp12",
+        "price": 160000,
+        "sold": 540,
+        "rating": 4.6
+    },
+    {
+        "id": 13,
+        "name": "Sách Nghệ thuật với thị giác",
+        "idcategory": 2,
+        "imageKey": "sp13",
+        "price": 250000,
+        "sold": 120,
+        "rating": 4.8
+    },
+    {
+        "id": 14,
+        "name": "Sách Bí Quyết Vẽ Bút Chì",
+        "idcategory": 2,
+        "imageKey": "sp14",
+        "price": 135000,
+        "sold": 890,
+        "rating": 4.4
+    },
+    {
+        "id": 15,
+        "name": "Sách Bí Quyết Vẽ Chì Cho Người Mới",
+        "idcategory": 2,
+        "imageKey": "sp15",
+        "price": 130000,
+        "sold": 1100,
+        "rating": 4.5
+    },
+    {
+        "id": 16,
+        "name": "Sách Bách Khoa Toàn Thư - Thực Hành Hội Họa",
+        "idcategory": 2,
+        "imageKey": "sp16",
+        "price": 350000,
+        "sold": 85,
+        "rating": 5.0
+    },
+    {
+        "id": 17,
+        "name": "Sách Hướng Dẫn Vẽ Khuôn Mặt",
+        "idcategory": 2,
+        "imageKey": "sp17",
+        "price": 155000,
+        "sold": 430,
+        "rating": 4.2
+    },
+    {
+        "id": 18,
+        "name": "Sách Bí Quyết Vẽ Phong Cảnh Tự Nhiên",
+        "idcategory": 2,
+        "imageKey": "sp18",
+        "price": 170000,
+        "sold": 270,
+        "rating": 4.4
+    },
+    {
+        "id": 19,
+        "name": "Sách Hướng Dẫn Vẽ Truyện Tranh",
+        "idcategory": 2,
+        "imageKey": "sp19",
+        "price": 140000,
+        "sold": 1560,
+        "rating": 4.7
+    },
+    {
+        "id": 20,
+        "name": "Sách Nguyên Lý Hội Họa Đen Trắng",
+        "idcategory": 2,
+        "imageKey": "sp20",
+        "price": 190000,
+        "sold": 190,
+        "rating": 4.3
+    },
+    {
+        "id": 21,
+        "name": "Sách Thu Nhập Thụ Động",
+        "idcategory": 3,
+        "imageKey": "sp21",
+        "price": 120000,
+        "sold": 2300,
+        "rating": 4.6
+    },
+    {
+        "id": 22,
+        "name": "Sách Leaders Create Leaders",
+        "idcategory": 3,
+        "imageKey": "sp22",
+        "price": 180000,
+        "sold": 450,
+        "rating": 4.8
+    },
+    {
+        "id": 23,
+        "name": "Sách Quản Trị Chiến Lược Thực Chiến ",
+        "idcategory": 3,
+        "imageKey": "sp23",
+        "price": 220000,
+        "sold": 320,
+        "rating": 4.7
+    },
+    {
+        "id": 24,
+        "name": "Sách KPI",
+        "idcategory": 3,
+        "imageKey": "sp24",
+        "price": 150000,
+        "sold": 1200,
+        "rating": 4.5
+    },
+    {
+        "id": 25,
+        "name": "Sách Tối Ưu Vận Hành Doanh Nghiệp",
+        "idcategory": 3,
+        "imageKey": "sp25",
+        "price": 250000,
+        "sold": 150,
+        "rating": 4.9
+    },
+    {
+        "id": 26,
+        "name": "Sách Xây Dựng Hệ Thống Bán Hàng Đa Kênh",
+        "idcategory": 3,
+        "imageKey": "sp26",
+        "price": 195000,
+        "sold": 870,
+        "rating": 4.6
+    },
+    {
+        "id": 27,
+        "name": "Sách Năm Tính Cách Tiền Bạc",
+        "idcategory": 3,
+        "imageKey": "sp27",
+        "price": 145000,
+        "sold": 640,
+        "rating": 4.4
+    },
+    {
+        "id": 28,
+        "name": "Sách Tư Duy Làm Giàu",
+        "idcategory": 3,
+        "imageKey": "sp28",
+        "price": 110000,
+        "sold": 3400,
+        "rating": 4.7
+    },
+    {
+        "id": 29,
+        "name": "Sách Lãnh Đạo Khôn Ngoan",
+        "idcategory": 3,
+        "imageKey": "sp29",
+        "price": 165000,
+        "sold": 520,
+        "rating": 4.5
+    },
+    {
+        "id": 30,
+        "name": "Sách Quy Luật Của Tiền",
+        "idcategory": 3,
+        "imageKey": "sp30",
+        "price": 175000,
+        "sold": 1100,
+        "rating": 4.8
+    },
+    {
+        "id": 31,
+        "name": "Sách Hiểu biết về trái tim",
+        "idcategory": 4,
+        "imageKey": "sp31",
+        "price": 135000,
+        "sold": 8900,
+        "rating": 4.9
+    },
+    {
+        "id": 32,
+        "name": "Sách 30 tuổi mọi thứ chỉ mới bắt đầu",
+        "idcategory": 4,
+        "imageKey": "sp32",
+        "price": 99000,
+        "sold": 2100,
+        "rating": 4.6
+    },
+    {
+        "id": 33,
+        "name": "Sách sức mạnh của EQ",
+        "idcategory": 4,
+        "imageKey": "sp33",
+        "price": 115000,
+        "sold": 1500,
+        "rating": 4.7
+    },
+    {
+        "id": 34,
+        "name": "Sách sức hút của sự tử tế",
+        "idcategory": 4,
+        "imageKey": "sp34",
+        "price": 89000,
+        "sold": 1300,
+        "rating": 4.8
+    },
+    {
+        "id": 35,
+        "name": "Sách tĩnh lặng và dáng vẻ đẹp nhất của bạn",
+        "idcategory": 4,
+        "imageKey": "sp35",
+        "price": 120000,
+        "sold": 760,
+        "rating": 4.5
+    },
+    {
+        "id": 36,
+        "name": "Sách sự kỳ diệu của lòng biết ơn",
+        "idcategory": 4,
+        "imageKey": "sp36",
+        "price": 85000,
+        "sold": 4200,
+        "rating": 4.9
+    },
+    {
+        "id": 37,
+        "name": "Sách viết từ số 0",
+        "idcategory": 4,
+        "imageKey": "sp37",
+        "price": 140000,
+        "sold": 340,
+        "rating": 4.3
+    },
+    {
+        "id": 38,
+        "name": "Sách làm sao học ít hiểu nhiều",
+        "idcategory": 4,
+        "imageKey": "sp38",
+        "price": 95000,
+        "sold": 5600,
+        "rating": 4.7
+    },
+    {
+        "id": 39,
+        "name": "Sách Soul therapy",
+        "idcategory": 4,
+        "imageKey": "sp39",
+        "price": 150000,
+        "sold": 210,
+        "rating": 4.6
+    },
+    {
+        "id": 40,
+        "name": "Sách nghệ thuật không nổi giận",
+        "idcategory": 4,
+        "imageKey": "sp40",
+        "price": 110000,
+        "sold": 1800,
+        "rating": 4.5
+    },
+    {
+        "id": 41,
+        "name": "Sách Giáo Trình Chuẩn HSK 1",
+        "idcategory": 5,
+        "imageKey": "sp41",
+        "price": 168000,
+        "sold": 3400,
+        "rating": 4.8
+    },
+    {
+        "id": 42,
+        "name": "Sách Cambridge IELTS 20",
+        "idcategory": 5,
+        "imageKey": "sp42",
+        "price": 250000,
+        "sold": 1200,
+        "rating": 4.9
+    },
+    {
+        "id": 43,
+        "name": "Sách Tự Học Từ Vận Tiếng Anh",
+        "idcategory": 5,
+        "imageKey": "sp43",
+        "price": 120000,
+        "sold": 4500,
+        "rating": 4.6
+    },
+    {
+        "id": 44,
+        "name": "Sách IELS Writing",
+        "idcategory": 5,
+        "imageKey": "sp44",
+        "price": 185000,
+        "sold": 2300,
+        "rating": 4.7
+    },
+    {
+        "id": 45,
+        "name": "Sách Giáo Trình Chuẩn HSK 2",
+        "idcategory": 5,
+        "imageKey": "sp45",
+        "price": 178000,
+        "sold": 2100,
+        "rating": 4.8
+    },
+    {
+        "id": 46,
+        "name": "Sách Giáo Trình Chuẩn YCI 1",
+        "idcategory": 5,
+        "imageKey": "sp46",
+        "price": 150000,
+        "sold": 800,
+        "rating": 4.5
+    },
+    {
+        "id": 47,
+        "name": "Sách Giáo Trình Chuẩn YCI 2",
+        "idcategory": 5,
+        "imageKey": "sp47",
+        "price": 160000,
+        "sold": 650,
+        "rating": 4.4
+    },
+    {
+        "id": 48,
+        "name": "Sách Tiếng Anh Genz Trong Giao Tiếp",
+        "idcategory": 5,
+        "imageKey": "sp48",
+        "price": 135000,
+        "sold": 3200,
+        "rating": 4.7
+    },
+    {
+        "id": 49,
+        "name": "Sách Tập Viết Tiếng Nhật",
+        "idcategory": 5,
+        "imageKey": "sp49",
+        "price": 85000,
+        "sold": 1900,
+        "rating": 4.6
+    },
+    {
+        "id": 50,
+        "name": "Sách 2000 Từ Vựng Tiếng Nhật",
+        "idcategory": 5,
+        "imageKey": "sp50",
+        "price": 195000,
+        "sold": 1500,
+        "rating": 4.8
+    },
+    {
+        "id": 51,
+        "name": "Sách Du Lịch Văn Hóa Hội An",
+        "idcategory": 6,
+        "imageKey": "sp51",
+        "price": 125000,
+        "sold": 450,
+        "rating": 4.7
+    },
+    {
+        "id": 52,
+        "name": "Sách Phép Thờ Cúng Của Người An Nam ",
+        "idcategory": 6,
+        "imageKey": "sp52",
+        "price": 140000,
+        "sold": 890,
+        "rating": 4.9
+    },
+    {
+        "id": 53,
+        "name": "Sách Cẩm Nang Du Lịch Mỹ",
+        "idcategory": 6,
+        "imageKey": "sp53",
+        "price": 210000,
+        "sold": 230,
+        "rating": 4.4
+    },
+    {
+        "id": 54,
+        "name": "Sách Phát Triển Du Lịch Cộng Đồng",
+        "idcategory": 6,
+        "imageKey": "sp54",
+        "price": 135000,
+        "sold": 120,
+        "rating": 4.2
+    },
+    {
+        "id": 55,
+        "name": "Sách Hiểu Để Chọn",
+        "idcategory": 6,
+        "imageKey": "sp55",
+        "price": 95000,
+        "sold": 560,
+        "rating": 4.5
+    },
+    {
+        "id": 56,
+        "name": "Sách Tiếng Anh Du Lịch",
+        "idcategory": 6,
+        "imageKey": "sp56",
+        "price": 110000,
+        "sold": 1450,
+        "rating": 4.6
+    },
+    {
+        "id": 57,
+        "name": "Sách Phú Yên dất và người",
+        "idcategory": 6,
+        "imageKey": "sp57",
+        "price": 120000,
+        "sold": 380,
+        "rating": 4.8
+    },
+    {
+        "id": 58,
+        "name": "Sách Văn Hóa Pháp",
+        "idcategory": 6,
+        "imageKey": "sp58",
+        "price": 155000,
+        "sold": 210,
+        "rating": 4.5
+    },
+    {
+        "id": 59,
+        "name": "Sách Văn Hóa Thái Lan",
+        "idcategory": 6,
+        "imageKey": "sp59",
+        "price": 145000,
+        "sold": 340,
+        "rating": 4.4
+    },
+    {
+        "id": 60,
+        "name": "Sách Triết lý sống của người Nhật",
+        "idcategory": 6,
+        "imageKey": "sp60",
+        "price": 130000,
+        "sold": 1100,
+        "rating": 4.9
+    },
+    {
+        "id": 61,
+        "name": "Sách Tâm Lý Học Về Tiền",
+        "idcategory": 7,
+        "imageKey": "sp61",
+        "price": 189000,
+        "sold": 6700,
+        "rating": 4.8
+    },
+    {
+        "id": 62,
+        "name": "Sách Bước Chậm Lại Giữa Thế Gian Vội Vả",
+        "idcategory": 7,
+        "imageKey": "sp62",
+        "price": 125000,
+        "sold": 9500,
+        "rating": 4.9
+    },
+    {
+        "id": 63,
+        "name": "Sách Tâm Lý Học 1",
+        "idcategory": 7,
+        "imageKey": "sp63",
+        "price": 140000,
+        "sold": 800,
+        "rating": 4.5
+    },
+    {
+        "id": 64,
+        "name": "Sách Tâm Lý Học 2",
+        "idcategory": 7,
+        "imageKey": "sp64",
+        "price": 140000,
+        "sold": 750,
+        "rating": 4.5
+    },
+    {
+        "id": 65,
+        "name": "Sách Tâm Lý Học 3",
+        "idcategory": 7,
+        "imageKey": "sp65",
+        "price": 140000,
+        "sold": 720,
+        "rating": 4.5
+    },
+    {
+        "id": 66,
+        "name": "Sách Tâm Lý Học 4",
+        "idcategory": 7,
+        "imageKey": "sp66",
+        "price": 140000,
+        "sold": 680,
+        "rating": 4.5
+    },
+    {
+        "id": 67,
+        "name": "Sách Tâm Lý Học 5",
+        "idcategory": 7,
+        "imageKey": "sp67",
+        "price": 140000,
+        "sold": 640,
+        "rating": 4.5
+    },
+    {
+        "id": 68,
+        "name": "Sách Tâm Lý Học 6",
+        "idcategory": 7,
+        "imageKey": "sp68",
+        "price": 140000,
+        "sold": 610,
+        "rating": 4.5
+    },
+    {
+        "id": 69,
+        "name": "Sách Tâm Lý Học 7",
+        "idcategory": 7,
+        "imageKey": "sp69",
+        "price": 140000,
+        "sold": 590,
+        "rating": 4.5
+    },
+    {
+        "id": 70,
+        "name": "Sách Tâm Lý Học 8",
+        "idcategory": 7,
+        "imageKey": "sp70",
+        "price": 140000,
+        "sold": 550,
+        "rating": 4.5
+    },
+    {
+        "id": 71,
+        "name": "Sách Khoa Học Kỹ Thuật 1",
+        "idcategory": 8,
+        "imageKey": "sp71",
+        "price": 250000,
+        "sold": 300,
+        "rating": 4.6
+    },
+    {
+        "id": 72,
+        "name": "Sách Khoa Học Kỹ Thuật 2",
+        "idcategory": 8,
+        "imageKey": "sp72",
+        "price": 250000,
+        "sold": 280,
+        "rating": 4.6
+    },
+    {
+        "id": 73,
+        "name": "Sách Khoa Học Kỹ Thuật 3",
+        "idcategory": 8,
+        "imageKey": "sp73",
+        "price": 250000,
+        "sold": 260,
+        "rating": 4.6
+    },
+    {
+        "id": 74,
+        "name": "Sách Khoa Học Kỹ Thuật 4",
+        "idcategory": 8,
+        "imageKey": "sp74",
+        "price": 250000,
+        "sold": 240,
+        "rating": 4.6
+    },
+    {
+        "id": 75,
+        "name": "Sách Khoa Học Kỹ Thuật 5",
+        "idcategory": 8,
+        "imageKey": "sp75",
+        "price": 250000,
+        "sold": 220,
+        "rating": 4.6
+    },
+    {
+        "id": 76,
+        "name": "Sách Khoa Học Kỹ Thuật 6",
+        "idcategory": 8,
+        "imageKey": "sp76",
+        "price": 250000,
+        "sold": 200,
+        "rating": 4.6
+    },
+    {
+        "id": 77,
+        "name": "Sách Khoa Học Kỹ Thuật 7",
+        "idcategory": 8,
+        "imageKey": "sp77",
+        "price": 250000,
+        "sold": 180,
+        "rating": 4.6
+    },
+    {
+        "id": 78,
+        "name": "Sách Khoa Học Kỹ Thuật 8",
+        "idcategory": 8,
+        "imageKey": "sp78",
+        "price": 250000,
+        "sold": 160,
+        "rating": 4.6
+    },
+    {
+        "id": 79,
+        "name": "Sách Khoa Học Kỹ Thuật 9",
+        "idcategory": 8,
+        "imageKey": "sp79",
+        "price": 250000,
+        "sold": 140,
+        "rating": 4.6
+    },
+    {
+        "id": 80,
+        "name": "Sách Khoa Học Kỹ Thuật 10",
+        "idcategory": 8,
+        "imageKey": "sp80",
+        "price": 250000,
+        "sold": 120,
+        "rating": 4.6
+    },
+    {
+        "id": 81,
+        "name": "Sách Lịch Sử 1",
+        "idcategory": 9,
+        "imageKey": "sp81",
+        "price": 120000,
+        "sold": 450,
+        "rating": 4.7
+    },
+    {
+        "id": 82,
+        "name": "Sách Lịch Sử 2",
+        "idcategory": 9,
+        "imageKey": "sp82",
+        "price": 120000,
+        "sold": 420,
+        "rating": 4.7
+    },
+    {
+        "id": 83,
+        "name": "Sách Lịch Sử 3",
+        "idcategory": 9,
+        "imageKey": "sp83",
+        "price": 120000,
+        "sold": 400,
+        "rating": 4.7
+    },
+    {
+        "id": 84,
+        "name": "Sách Lịch Sử 4",
+        "idcategory": 9,
+        "imageKey": "sp84",
+        "price": 120000,
+        "sold": 380,
+        "rating": 4.7
+    },
+    {
+        "id": 85,
+        "name": "Sách Lịch Sử 5",
+        "idcategory": 9,
+        "imageKey": "sp85",
+        "price": 120000,
+        "sold": 360,
+        "rating": 4.7
+    },
+    {
+        "id": 86,
+        "name": "Sách Lịch Sử 6",
+        "idcategory": 9,
+        "imageKey": "sp86",
+        "price": 120000,
+        "sold": 340,
+        "rating": 4.7
+    },
+    {
+        "id": 87,
+        "name": "Sách Lịch Sử 7",
+        "idcategory": 9,
+        "imageKey": "sp87",
+        "price": 120000,
+        "sold": 320,
+        "rating": 4.7
+    },
+    {
+        "id": 88,
+        "name": "Sách Lịch Sử 8",
+        "idcategory": 9,
+        "imageKey": "sp88",
+        "price": 120000,
+        "sold": 300,
+        "rating": 4.7
+    },
+    {
+        "id": 89,
+        "name": "Sách Lịch Sử 9",
+        "idcategory": 9,
+        "imageKey": "sp89",
+        "price": 120000,
+        "sold": 280,
+        "rating": 4.7
+    },
+    {
+        "id": 90,
+        "name": "Sách Lịch Sử 10",
+        "idcategory": 9,
+        "imageKey": "sp90",
+        "price": 120000,
+        "sold": 250,
+        "rating": 4.7
+    },
+    {
+        "id": 91,
+        "name": "Sách Giáo Khoa 1",
+        "idcategory": 10,
+        "imageKey": "sp91",
+        "price": 35000,
+        "sold": 15000,
+        "rating": 4.5
+    },
+    {
+        "id": 92,
+        "name": "Sách Giáo Khoa 2",
+        "idcategory": 10,
+        "imageKey": "sp92",
+        "price": 35000,
+        "sold": 14500,
+        "rating": 4.5
+    },
+    {
+        "id": 93,
+        "name": "Sách Giáo Khoa 3",
+        "idcategory": 10,
+        "imageKey": "sp93",
+        "price": 35000,
+        "sold": 14000,
+        "rating": 4.5
+    },
+    {
+        "id": 94,
+        "name": "Sách Giáo Khoa 4",
+        "idcategory": 10,
+        "imageKey": "sp94",
+        "price": 35000,
+        "sold": 13500,
+        "rating": 4.5
+    },
+    {
+        "id": 95,
+        "name": "Sách Giáo Khoa 5",
+        "idcategory": 10,
+        "imageKey": "sp95",
+        "price": 35000,
+        "sold": 13000,
+        "rating": 4.5
+    },
+    {
+        "id": 96,
+        "name": "Sách Giáo Khoa 6",
+        "idcategory": 10,
+        "imageKey": "sp96",
+        "price": 35000,
+        "sold": 12500,
+        "rating": 4.5
+    },
+    {
+        "id": 97,
+        "name": "Sách Giáo Khoa 7",
+        "idcategory": 10,
+        "imageKey": "sp97",
+        "price": 35000,
+        "sold": 12000,
+        "rating": 4.5
+    },
+    {
+        "id": 98,
+        "name": "Sách Giáo Khoa 8",
+        "idcategory": 10,
+        "imageKey": "sp98",
+        "price": 35000,
+        "sold": 11500,
+        "rating": 4.5
+    },
+    {
+        "id": 99,
+        "name": "Sách Giáo Khoa 9",
+        "idcategory": 10,
+        "imageKey": "sp99",
+        "price": 35000,
+        "sold": 11000,
+        "rating": 4.5
+    },
+    {
+        "id": 100,
+        "name": "Sách Giáo Khoa 10",
+        "idcategory": 10,
+        "imageKey": "sp100",
+        "price": 35000,
+        "sold": 10500,
+        "rating": 4.5
+    }
+]

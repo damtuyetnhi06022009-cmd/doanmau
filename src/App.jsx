@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Student from './student'
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import ProductList from './components/Products/ProductList';
+import DetailProduct from './components/Products/DetailProduct';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div className='card-title'>
-        <Student name =" Đàm Tuyết Nhi " age="16" class="26SPIT3"/>
-      </div>
-    <br/>
-      <div className='card-title'>
-        <Student name =" Võ Nguyễn Phương Uyên " age="16" class="26SPIT3"/>
-      </div>
-    <br />
-      <div className='card-title'>
-        <Student name =" Nguyễn Chí Hiếu " age="16" class="26SPIT3"/>
-      </div>
-    <br />
-       <div className='card-title'>
-        <Student name =" Nguyễn Ngọc Quỳnh Như " age="16" class="26SPIT3"/>
-      </div> \
-    <br />
-      <div className='card-title'>
-        <Student name =" Nguyễn Ngọc Quỳnh Nhi " age="16" class="26SPIT3"/>
-      </div>
-    </>
-  )
+<Router>
+  <div className="app-wrapper">
+    <Header />
+    <Routes>
+      <Route path="/" element={<ProductList />} />
+      <Route path="/product/:id" element={<DetailProduct />} />
+    </Routes>
+    <Footer />
+  </div>
+</Router>
+  );
 }
 
-export default App
+export default App;
