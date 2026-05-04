@@ -11,7 +11,7 @@
     align-items: stretch;
 }
 
-.product-card:hover {
+.product-card:hover{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
 }
@@ -35,7 +35,7 @@
     justify-content: center;
 }
 
-.product-image {
+.product-image{
     width: 100%;
     max-width: 250px;
     height: auto;
@@ -43,7 +43,7 @@
     object-fit: contain;
 }
 
-.product-badge-section {
+.product-badge-section{
     padding: 0 15px;
     margin-bottom: 10px;
     display: flex;
@@ -51,7 +51,7 @@
     gap: 8px;
 }
 
-.product-badge {
+.product-badge{
     background-color: #0066cc;
     color: white;
     padding: 4px 8px;
@@ -62,7 +62,7 @@
     font-weight: 500;
 }
 
-.product-spec-tags {
+.product-spec-tags{
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
@@ -72,12 +72,9 @@
     background-color: #f0f0f0;
     color: #333;
     padding: 4px 10px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: 500;
 }
 
-.product-name {
+.product-name{
     font-size: 32px;
     font-weight: 700;
     color: #0066cc;
@@ -88,16 +85,15 @@
     align-items: flex-start;
 }
 
-.product-ram-ssd {
+.product-ram-ssd{
     display: flex;
     gap: 8px;
     padding: 0 15px;
     margin-bottom: 12px;
 }
 
-.ram-ssd-tag {
-    background: linear-gradient(135deg, #fdf3e7 0%,
-            #ffe9d6 100%);
+.ram-ssd-tag{
+    background: linear-gradient(135deg, #fdf3e7 0%, #ffe9d6 100%);
     color: #d35400;
     padding: 6px 12px;
     border-radius: 6px;
@@ -106,7 +102,7 @@
     border: 1px solid #ffc38b;
 }
 
-.product-pricing {
+.product-pricing{
     padding: 0 15px;
     margin-bottom: 10px;
     min-height: 50px;
@@ -115,12 +111,11 @@
     justify-content: flex-start;
 }
 
-.current-price {
+.current-price{
     font-size: 20px;
     font-weight: bold;
     color: #e53935;
     margin-bottom: 4px;
-
 }
 
 .original-price-section {
@@ -129,21 +124,21 @@
     gap: 8px;
 }
 
-.original-price {
+.original-price{
     font-size: 14px;
     color: #999;
     text-decoration: line-through;
 }
 
-.discount {
-    font-size: 12px;
+.discount{
+    font-size: 0 15px;
     color: #e53935;
     font-weight: 500;
 }
 
-.product-gift {
+.product-gift{
     padding: 0 15px;
-    margin-bottom: 12px;
+    margin-bottom:12px;
     font-size: 13px;
     color: #0066cc;
     font-weight: 500;
@@ -158,13 +153,13 @@
     line-height: 1.8;
 }
 
-.product-specs li {
+.product-specs li{
     margin-bottom: 6px;
 }
 
-.product-specs strong {
+.product-specs strong{
     color: #333;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .product-rating-sales {
@@ -176,7 +171,7 @@
     font-size: 13px;
 }
 
-.rating {
+.rating{
     color: #f57c00;
     font-weight: 500;
 }
@@ -185,45 +180,45 @@
     color: #666;
 }
 
-.compare-button {
+.compare-button{
     margin: auto 15px 15px 15px;
     margin-top: auto;
     padding: 10px;
     background-color: #0066cc;
-    color: white;
+    color: white;   
     border: none;
     border-radius: 4px;
     font-size: 13px;
     font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 }
 
-.compare-button:hover {
+.compare-button:hover{
     background-color: #0052a3;
 }
 
-.compare-button:disabled {
+.compare-button:disabled{
     background-color: #94a3b8;
     cursor: not-allowed;
 }
 
-.error-text {
+.error-text{
     margin: 8px 15px 12px;
     color: #e53935;
     font-size: 13px;
 }
 
-@media (max-width: 768px) {
-    .product-image {
+@media (max-width: 768px){
+    .product-image{
         max-width: 200px;
     }
 
-    .current-price {
+    .current-price{
         font-size: 18px;
     }
 
-    .product-name {
+    .product-name{
         font-size: 18px;
         min-height: 35px;
         color: #0066cc;

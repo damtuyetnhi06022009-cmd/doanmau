@@ -1,41 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useParams, useNavigate } from 'react-router-dom';
-import sp1Image from '../../img/sp1.PNG';
-import sp2Image from '../../img/sp2.PNG';
-import sp3Image from '../../img/sp3.PNG';
-
+import { image } from '../../utils/productImages';
 import './DetailProduct.css';
-
-const imageMap = {
-    sp1: sp1Image,
-    sp2: sp2Image,
-    sp3: sp3Image
-};
 
 const DetailProduct = () => {
     const { id } = useParams();
     const navigate = useNavigate();
     const location = useLocation();
-    const [product, setProduct] =
-        useState(location.state?.product || null);
-    const [isLoading, setIsLoading] =
-        useState(!location.state?.product);
+    const [product, setProduct] = useState(location.state?.product || null);
     const [error, setError] = useState(null);
 
-    useEffect(() => {
+    useEffect(()=>{
         if (product) return;
 
         const fetchProduct = async () => {
-            try {
-                const response = await
-                    fetch('/product.json');
+            try{
+                const response = await fetch('/product.json');
                 if (!response.ok) {
-                    throw new Error('Không thể tải thông tin sản phẩm');
+                    throw new Error('không thể tải thông tin sản phẩm');
                 }
 
                 const data = await response.json();
-                const found = data.find((item) =>
-                    String(item.id) === String(id));
+                const found = data.find((item) => String(item.id) === String(id));
+
                 if (!found) {
                     throw new Error('Sản phẩm không tồn tại');
                 }
@@ -54,11 +41,12 @@ const DetailProduct = () => {
         fetchProduct();
     }, [id, product]);
 
-    if (isLoading) {
-        return <div className="detail-container">Đang tải chi tiết sản phẩm...</div>;
+    if (isloading) {
+        return <div className="detail-container">Đang tải chi tiết sản phẩm... </div>
     }
+
     if (error) {
-        return <div className="detail-container">Lỗi:{error}</div>;
+        return <div className="detail-container">Lỗi: {error}</div>;
     }
 
     if (!product) {
@@ -74,7 +62,7 @@ const DetailProduct = () => {
             <div className="detail-card">
                 <div className="detail-image">
                     <img
-                        src={product.image || 'https://via.placeholder.com/500x350'}
+                        src={product.image || 'https://via.placehodler.com/500x350'}
                         alt={product.name}
                     />
                 </div>
@@ -84,7 +72,7 @@ const DetailProduct = () => {
                     <p className="detail-price">
                         <span className="current-price">{product.currentPrice}</span>
                         {product.originalPrice && (
-                            <span className="original-price">{product.originalPrice}</span>
+                            <span className="original-price">{product.currentPrice}</span>
                         )}
                         {product.discount && <span className="discount">{product.discount}</span>}
                     </p>
@@ -97,23 +85,24 @@ const DetailProduct = () => {
 
                     <div className="detail-meta">
                         {product.rating && <span>star{product.rating}</span>}
-                        {product.sold && <span>Đã bán{product.sold}</span>}
+                        {product.sold && <span>đã bán{product.sold}</span>}
                     </div>
+
                     <button className="buy-now-button" onClick={() => {
-                        const savedCart = localStogare.getItem('cart');
+                        const savedCart = localStorage.getItem('cart');
                         const cart = savedCart ? JSON.parse(savedCart) : [];
-                        const existingItemIndex = cart.findIndex(item => item.id === product.id);
+                        const exitstingItemIndex = cart.findIndex(item => item.id === product.id);
 
                         if (existingItemIndex >= 0) {
                             cart[existingItemIndex].quantity += 1;
-                        } else {
+                        }else {
                             cart.push({
                                 ...product,
                                 quantity: 1
                             });
                         }
 
-                        localStogare.setItem('cart', JSON.stringify(cart));
+                        localStorage.setItem('cart', JSON.stringify(cart));
                         window.dispatchEvent(new Event('cartUpdated'));
 
                         navigate('/cart');
