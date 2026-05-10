@@ -91,7 +91,7 @@ const DetailProduct = () => {
                     <button className="buy-now-button" onClick={() => {
                         const savedCart = localStorage.getItem('cart');
                         const cart = savedCart ? JSON.parse(savedCart) : [];
-                        const exitstingItemIndex = cart.findIndex(item => item.id === product.id);
+                        const existingItemIndex = cart.findIndex(item => item.id === product.id);
 
                         if (existingItemIndex >= 0) {
                             cart[existingItemIndex].quantity += 1;
