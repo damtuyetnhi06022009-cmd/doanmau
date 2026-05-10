@@ -1,19 +1,20 @@
-const imageModules = import.meta.glob('../img/*.{png,jpg,jepg,webp,gif,svg}', {
+const imageModules = import.meta.glob('../img/*.{png,jpg,jpeg,webp,gif,svg}', {
     eager: true
 });
+
 const baseName = (path) => {
     const name = path.split('/').pop() || "";
-    return name.replace(/\.[^.]+$/, '');
+    return name.replace(/\.[^.]+$/, ''); 
 };
 
 export const imageMap = Object.fromEntries(
-    Object.entries(imageNodules).map
-        (([path, mod]) => [baseName(path), mod.default])
+    Object.entries(imageModules).map(
+        ([path, mod]) => [baseName(path), mod.default]
+    )
 );
 
-export function resolveProductImage
-    (ImageKey) {
-    if (ImageKey == null || ImageKey === '')
-        return undefined;
-    return imageMap[imageMap, ImageKey];
+export function resolveProductImage(ImageKey) {
+    if (ImageKey == null || ImageKey === '') return undefined;
+    
+    return imageMap[ImageKey];
 }

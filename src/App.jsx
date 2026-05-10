@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import ProductList from './components/Products/ProductList';
 import DetailProduct from './components/Products/DetailProduct';
-import ProductCard from './components/Products/ProductCard';
-import './App.css';
+import ProductList from "./components/Products/ProductList";
+import Cart from "./components/Pages/Cart";
+import Login from './components/Pages/Login';
+import Profile from './components/Pages/Profile';
 
 function App() {
   const location = useLocation();
@@ -16,13 +16,22 @@ function App() {
     location.pathname === '/admin';
   return (
     <>
-        <Header />
-        <Routes>
-          <Route path="/" element={<ProductList />} />
-          <Route path="/product" element={<ProductList />} />
-          <Route path="/product/:id" element={<DetailProduct />} />
-        </Routes>
-        <Footer />
+      {!hideChrome && <Header />}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <ProductList />
+            </>
+          }
+        />
+        <Route path="/login" element={<Login />} />
+        <Route path="/profile" element={<Profile />}/> 
+        <Route path="/product/:id" element={<DetailProduct />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+      {!hideChrome && <Footer />}
     </>
   );
 }

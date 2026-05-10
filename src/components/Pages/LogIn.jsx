@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { FaLock, FaEye, FaEyeSlash, FaRegKeyboard } from 'react-icons/fa';
-import './LogIn.css';
+import './Login.css';
 
 const LogIn = ({ onSwitchTo }) => {
   const [username, setUsername] = useState('');
