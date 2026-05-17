@@ -21,19 +21,15 @@ const ProductList = () => {
                     fetch(`${jsonBase}products.json`),
                     fetch(`${jsonBase}category.json`)
                 ]);
-
                 if (!productsRes.ok) {
                     throw new Error('Không thể tải dữ liệu sản phẩm');
                 }
-
                 const data = await productsRes.json();
                 const mappedProducts = data.map((item) => ({
                     ...item,
                     image: imageMap[item.imageKey] || item.image
                 }));
-
                 setProducts(mappedProducts);
-
                 if (categoriesRes.ok) {
                     const catData = await categoriesRes.json();
                     setCategories(Array.isArray(catData) ? catData : []);
@@ -44,18 +40,16 @@ const ProductList = () => {
                 setIsLoading(false);
             }
         };
-
         loadData();
-
     }, []);
-
     const filteredProducts =
 
         selectedCategoryId == null
             ? products
-            : products.filter((p) => p.categoryid === selectedCategoryId);
+            : products.filter((p) => p.categoryId === selectedCategoryId);
 
     const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PRODUCTS_PER_PAGE));
+
     useEffect(() => {
         setCurrentPage((p) => Math.min(p, totalPages));
     }, [totalPages]);
@@ -67,7 +61,6 @@ const ProductList = () => {
     const safePage = Math.min(currentPage, totalPages);
     const start = (safePage - 1) * PRODUCTS_PER_PAGE;
     const visibleProducts = filteredProducts.slice(start, start + PRODUCTS_PER_PAGE);
-
     const goPrev = () => setCurrentPage((p) => Math.max(1, p - 1));
     const goNext = () => setCurrentPage((p) => Math.min(totalPages, p + 1));
 
@@ -78,12 +71,11 @@ const ProductList = () => {
     if (error) {
         return <div className="product-list-container">Lỗi: {error}</div>;
     }
-
+    
     return (
         <div className="product-list-container">
             <div className="product-list-layout">
                 {categories.length > 0 && (
-
                     <aside className="product-list-sidebar" aria-label="Lọc theo danh mục">
                         <h2 className="product-list-sidebar__title">Danh mục</h2>
                         <ul className="product-list-sidebar__list">
@@ -91,25 +83,28 @@ const ProductList = () => {
                                 <button
                                     type="button"
                                     className={`product-list-sidebar__btn${selectedCategoryId == null ? ' product-list-sidebar__btn--active' : ''}`}
-
-                                    onClick={() => setSelectedCategoryId(null)}
+                                    onClick={() => setSelectedCategoryId(null)
+                                    }
                                 >
                                     Tất cả
                                 </button>
                             </li>
+
                             {categories.map((cat) => (
                                 <li key={cat.id}>
                                     <button
                                         type="button"
                                         className={`product-list-sidebar__btn${selectedCategoryId === cat.id ? ' product-list-sidebar__btn--active' : ''}`}
-                                        onClick={() => setSelectedCategoryId(cat.id)}>
+                                        onClick={() => setSelectedCategoryId(cat.id)}
+                                    >
                                         {cat.name}
                                     </button>
                                 </li>
                             ))}
                         </ul>
                     </aside>
-                )}
+                )
+                }
                 <div className="product-list-main">
                     {filteredProducts.length === 0 ? (
                         <p className="product-list-empty">Không có sản phẩm trong danh mục này.</p>
@@ -121,6 +116,7 @@ const ProductList = () => {
                         </div>
                     )}
                     {filteredProducts.length > PRODUCTS_PER_PAGE && filteredProducts.length > 0 && (
+
                         <div className="product-list-pagination" role="navigation" aria-label="Phân trang sản phẩm">
                             <button
                                 type="button"
@@ -128,22 +124,19 @@ const ProductList = () => {
                                 onClick={goPrev}
                                 disabled={safePage <= 1}
                             >
-                                Trang trước
+                                ← Trang trước
                             </button>
 
                             <span className="product-list-pagination__info">
-
                                 Trang {safePage} / {totalPages}
                             </span>
-
                             <button
                                 type="button"
                                 className="product-list-pagination__btn"
                                 onClick={goNext}
                                 disabled={safePage >= totalPages}
                             >
-
-                                Trang sau 
+                                Trang sau →
                             </button>
                         </div>
                     )}

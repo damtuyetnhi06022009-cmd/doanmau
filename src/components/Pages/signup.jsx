@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
@@ -12,40 +12,36 @@ const Signup = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        set.Error('');
+        setError('');
 
         const trimmedUser = username.trim();
         const trimmedPass = password.trim();
-        const trtimmedConfirm = confirm.trim();
+        const trimmedConfirm = confirm.trim();
 
         if (!trimmedUser || !trimmedPass) {
-            setError('Vui lòng nhập đủ tên đăng nhập và mật khẩu');
+            setError('Vui long nhập đủ tên đăng nhập và mật khẩu');
             return;
         }
-
-        if (trimmedPass !== trtimmedConfirm) {
+        if (trimmedPass !== trimmedConfirm) {
             setError('Mật khẩu xác nhận không khớp');
             return;
         }
-
         if (trimmedPass.length < 3) {
             setError('Mật khẩu tối thiểu 3 ký tự');
             return;
         }
-
-        try{
+        try {
             await axios.post('/api/register', {
                 user: trimmedUser,
                 pass: trimmedPass,
             });
             navigate('/login');
-        }catch (err) {
+        } catch (err) {
             const msg =
                 err.response?.data?.error ||
-                (err.response?.status === 404
-                    ? 'Chỉ hoạy động khi chạy npm run dev hoặc npm run preview (API ghi file trên server).'
-                    : null) ||
-                    'Đã xảy ra lỗi vui lòng thử lại sau';
+                (err.response?.status == 404
+                    ? 'Chỉ hoạt động khi chạy npm run dev hoặc npm run preview (API ghi file trên server).' : null) ||
+                'Đã xảy ra lỗi, vui lòng thử lại sau';
             setError(msg);
         }
     };
@@ -57,8 +53,8 @@ const Signup = () => {
 
                 <form className="login-form" onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <input 
-                            type="text" 
+                        <input
+                            type="text"
                             className="form-input"
                             placeholder="Tên đăng nhập"
                             value={username}
@@ -68,24 +64,24 @@ const Signup = () => {
                     </div>
 
                     <div className="form-group">
-                        <input 
-                            type="password"
+                        <input
+                            type="text"
                             className="form-input"
                             placeholder="Mật khẩu"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            autoComplete="new-password" 
+                            autoComplete="new-password"
                         />
                     </div>
-                    
+
                     <div className="form-group">
-                        <input 
+                        <input
                             type="password"
                             className="form-input"
                             placeholder="Xác nhận mật khẩu"
                             value={confirm}
                             onChange={(e) => setConfirm(e.target.value)}
-                            autoComplete="new-password" 
+                            autoComplete="new-password"
                         />
                     </div>
 
@@ -97,7 +93,7 @@ const Signup = () => {
                 </form>
 
                 <div className="login-footer login-footer--spaced">
-                    <span>Đã có tài khoản? </span>
+                    <span>Đã có tài khoản?</span>
                     <Link to="/login" className="signup-link">
                         Đăng nhập
                     </Link>

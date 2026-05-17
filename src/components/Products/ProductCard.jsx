@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ProductCard.css';
 
-const productUrl = `${import.meta.env.BASE_URL}product.json`;
+const productsUrl = `${import.meta.env.BASE_URL}products.json`;
 
 const ProductCard = ({ product }) => {
   const navigate = useNavigate();
-  const [isloading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
   const handleBuy = async () => {
@@ -19,46 +19,49 @@ const ProductCard = ({ product }) => {
       }
 
       const data = await response.json();
-      const matchedProduct = data.find((item) => item.id === product.id)
-
+      const matchedProduct = data.find((item) => item.id === product.id);
       if (!matchedProduct) {
         throw new Error('Sản phẩm không tồn tại');
       }
-
       navigate(`/product/${product.id}`, {
-        state: { product: {...matchedProduct, image: product.image}}
+        state: { product: { ...matchedProduct, image: product.image } }
       });
-    }catch (err) {
+    } catch (err) {
       setError(err.message);
-    }finally{
+    } finally {
       setIsLoading(false);
     }
   };
-
   return (
     <div className="product-card">
       <div className="product-image-container">
-        <img 
-          src={product.image || 'https://via.placeholder.com/300x200'} 
+        <img
+          src={product.image || 'https://via.placeholder.com/300x200'}
           alt={product.name}
-          className="product-image" 
-          />
+          className="product-image"
+        />
       </div>
-
       <h3 className="product-name">{product.name}</h3>
       <div className="product-ram-ssd">
         <button className="ram-ssd-tag">{product.sizeS}</button>
         <button className="ram-ssd-tag">{product.sizeM}</button>
         <button className="ram-ssd-tag">{product.sizeL}</button>
       </div>
-
       <div className="product-pricing">
-        <div className="rating">star {product.rating}</div>
-        <div className="sales">Đã bán {product.sold}</div>
+        <div className="current-price">{product.currentPrice}</div>
+        <div className="original-price-section">
+          <span className='original-price'>{product.originalPrice}</span>
+          {product.discount && <span className="discount">{product.discount}</span>}
+        </div>
+      </div>
+
+      <div className="product-rating-sales">
+        <span className="rating">⭐ {product.rating}</span>
+        <span className="sales">Đã bán {product.sold}</span>
       </div>
 
       <button className="compare-button" onClick={handleBuy} disabled={isLoading}>
-      {isloading ? 'Đang mở...' : 'Mua' }
+        {isLoading ? 'Đang mở...' : 'Mua'}
       </button>
       {error && <div className="error-text">{error}</div>}
     </div>
